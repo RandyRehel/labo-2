@@ -1,0 +1,43 @@
+.global {
+    display: flex;
+    align-items: center;
+    border: 1px dotted #dddddd;
+}
+
+#burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0% 50% 0% 50%;
+    background-color: orange;
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 3px;
+}
+
+#chkBurger:checked ~ nav{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+nav{
+    background-color: black;
+    position: relative;
+    left: -2rem;
+    z-index: -1;
+    margin-top: 0.5rem;
+    height: 100%;
+    border-radius: 0% 35% 0% 35%;
+    transition: clip-path 1s;
+    padding-right: 2rem;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        li{
+            a{
+                
+            }
+        }
+    }
+}
